@@ -1,0 +1,4 @@
+.vscode
+.states
+node_modules
+contracts/artifacts
