@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: None
-pragma solidity ^0.8.3; // pragma solidity ^0.4.17;
+pragma solidity ^0.8.3;
 
 contract functionContructor {
     uint value;

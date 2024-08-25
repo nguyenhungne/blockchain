@@ -9,5 +9,8 @@
   "dependencies": {
     "@remix-project/remixd": "^0.6.36",
     "Remix": "file:"
+  },
+  "devDependencies": {
+    "openzeppelin-solidity": "^3.4.2"
   }
 }

@@ -25,21 +25,24 @@ contract storageArray {
             numbers[i];
         }
 
-        // Memory array: store data in memory, must be deleted after function execution
-        // Declaring length of memory array is not allowed
-        function bar() external {
-            uint[] memory numbers = new uint[](10);
-            // Dont have push method
-            numbers[0] = 10;
-            numbers[1] = 20;
 
-            // delete numbers;
-            delete numbers[0];
-        }
 
-        function foo(uint[] calldata myArrays) external {
-            
-        }
+    }
+    // Memory array: store data in memory, must be deleted after function execution
+    // Declaring length of memory array is not allowed
+    function bar() external {
+        uint[] memory numbers = new uint[](10);
+        // Dont have push method
+        numbers[0] = 10;
+        numbers[1] = 20;
+
+        // delete numbers;
+        delete numbers[0];
+    }
+
+    function foo(uint[] calldata myArrays) external {
+        
+    }
 
     // external: use calldata
     // internal: use memmory
@@ -47,7 +50,4 @@ contract storageArray {
     // **Note:
     // Storage array is saved in blockchain
     // Memory array is not saved in blockchain cause it is temporary in function
-
-
-    }
 }
